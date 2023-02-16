@@ -10,3 +10,11 @@ console.log(friends);
 const years = new Array(1991, 1983, 2008, 2020);
 
 console.log(friends[0]);
+console.log(friends[1]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "jay";
+console.log(friends);
+//aqui nos mudamos uma const, o que acontece: apenas valores primitivos nao podem ser mudados, porem, uma array nao é um valor primitivo
