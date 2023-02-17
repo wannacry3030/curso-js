@@ -84,6 +84,47 @@ const heightJohn = 1.95;
 
 const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log(BMIJohn, BMIMark);
+const markHigherBMI = BMIMark > BMIJohn;
+
+console.log(BMIJohn, BMIMark, markHigherBMI);
 
 //CODING CHALLENGE #2
+//15% do valor da conta se  a conta for entre 50 e 300, se o valor for diferente, 20%
+//1
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+//2
+const bills = [125, 555, 44];
+
+//3
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(bills, tips);
+
+//praticando de novo
+const calcGorjeta = function (conta) {
+  return conta >= 50 && conta <= 300 ? conta * 0.15 : conta * 0.2;
+};
+
+const contas = [275, 40, 430];
+const gorjetas = [
+  calcGorjeta(contas[0]),
+  calcGorjeta(contas[1]),
+  calcGorjeta(contas[2]),
+];
+
+const contasgorjetas = [41.25, 8, 86];
+const contaEgorjeta = function (conta2) {
+  return (conta2 = gorjetas + contas);
+};
+
+const go1 = 275 + 41.25;
+const go2 =
+const go3 =
+
+console.log(go1);
+console.log(contas, gorjetas);
+console.log(
+  "a conta foi {gorjetas[0]}, a gorjeta foi {}, e o valor total ficou {}"
+);
