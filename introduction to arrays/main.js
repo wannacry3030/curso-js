@@ -76,4 +76,14 @@ if (friends.includes("Steven"));
   console.log("Voce tem um amigo chamado Steven");
 }
 
+//CODING CHALLENGE #1
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIJohn, BMIMark);
+
 //CODING CHALLENGE #2
