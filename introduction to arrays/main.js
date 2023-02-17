@@ -115,16 +115,38 @@ const gorjetas = [
 ];
 
 const contasgorjetas = [41.25, 8, 86];
-const contaEgorjeta = function (conta2) {
-  return (conta2 = gorjetas + contas);
-};
 
 const go1 = 275 + 41.25;
-const go2 =
-const go3 =
+const go2 = 40 + 8;
+const go3 = 430 + 86;
+const gos = [316.25, 48, 516];
 
-console.log(go1);
+const res1 =
+  "A conta foi " +
+  contas[0] +
+  " a gorjeta foi " +
+  contasgorjetas[0] +
+  " e o total ficou " +
+  gos[0];
+
+const res2 =
+  "A conta foi " +
+  contas[1] +
+  " a gorjeta foi " +
+  contasgorjetas[1] +
+  " e o total ficou " +
+  gos[1];
+
+const res3 =
+  "A conta foi " +
+  contas[2] +
+  " a gorjeta foi " +
+  contasgorjetas[2] +
+  " e o total ficou " +
+  gos[2];
+
+console.log(go1, go2, go3);
 console.log(contas, gorjetas);
-console.log(
-  "a conta foi {gorjetas[0]}, a gorjeta foi {}, e o valor total ficou {}"
-);
+console.log(res1);
+console.log(res2);
+console.log(res3);
