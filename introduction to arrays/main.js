@@ -44,113 +44,124 @@
 
 //
 
-const friends = ["ycaro", "peter", "joao"];
+// const friends = ["ycaro", "peter", "joao"];
 
-//add new elements to the array
-const newLenght = friends.push("jay");
-console.log(friends);
-console.log(newLenght);
-//add new elements to the array
-friends.unshift("John");
-console.log(friends);
+// //add new elements to the array
+// const newLenght = friends.push("jay");
+// console.log(friends);
+// console.log(newLenght);
+// //add new elements to the array
+// friends.unshift("John");
+// console.log(friends);
 
-//remove elements from the array
-friends.pop(); //ultimo elemento
-const popped = friends.pop();
-console.log(popped);
-console.log(friends);
+// //remove elements from the array
+// friends.pop(); //ultimo elemento
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
 
-friends.shift(); //primeiro
-console.log(friends);
+// friends.shift(); //primeiro
+// console.log(friends);
 
-console.log(friends.indexOf("peter"));
-console.log(friends.indexOf("Bob"));
+// console.log(friends.indexOf("peter"));
+// console.log(friends.indexOf("Bob"));
 
-friends.push(50);
-console.log(friends.includes("peter"));
-console.log(friends.includes("Bob"));
-console.log(friends.includes(50));
+// friends.push(50);
+// console.log(friends.includes("peter"));
+// console.log(friends.includes("Bob"));
+// console.log(friends.includes(50));
 
-if (friends.includes("Steven"));
-{
-  console.log("Voce tem um amigo chamado Steven");
-}
+// if (friends.includes("Steven"));
+// {
+//   console.log("Voce tem um amigo chamado Steven");
+// }
 
-//CODING CHALLENGE #1
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
+// //CODING CHALLENGE #1
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-const BMIMark = massMark / heightMark ** 2;
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-const markHigherBMI = BMIMark > BMIJohn;
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// const markHigherBMI = BMIMark > BMIJohn;
 
-console.log(BMIJohn, BMIMark, markHigherBMI);
+// console.log(BMIJohn, BMIMark, markHigherBMI);
 
-//CODING CHALLENGE #2
-//15% do valor da conta se  a conta for entre 50 e 300, se o valor for diferente, 20%
-//1
-const calcTip = function (bill) {
-  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// //CODING CHALLENGE #2
+// //15% do valor da conta se  a conta for entre 50 e 300, se o valor for diferente, 20%
+// //1
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
+
+// //2
+// const bills = [125, 555, 44];
+
+// //3
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// //4 somando o total em arrays
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(bills, tips, totals);
+
+// //praticando de novo
+// const calcGorjeta = function (conta) {
+//   return conta >= 50 && conta <= 300 ? conta * 0.15 : conta * 0.2;
+// };
+
+// const contas = [275, 40, 430];
+// const gorjetas = [
+//   calcGorjeta(contas[0]),
+//   calcGorjeta(contas[1]),
+//   calcGorjeta(contas[2]),
+// ];
+
+// const contasgorjetas = [41.25, 8, 86];
+
+// const go1 = 275 + 41.25;
+// const go2 = 40 + 8;
+// const go3 = 430 + 86;
+// const gos = [316.25, 48, 516];
+
+// const res1 =
+//   "A conta foi " +
+//   contas[0] +
+//   " a gorjeta foi " +
+//   contasgorjetas[0] +
+//   " e o total ficou " +
+//   gos[0];
+
+// const res2 =
+//   "A conta foi " +
+//   contas[1] +
+//   " a gorjeta foi " +
+//   contasgorjetas[1] +
+//   " e o total ficou " +
+//   gos[1];
+
+// const res3 =
+//   "A conta foi " +
+//   contas[2] +
+//   " a gorjeta foi " +
+//   contasgorjetas[2] +
+//   " e o total ficou " +
+//   gos[2];
+
+// console.log(go1, go2, go3);
+// console.log(contas, gorjetas);
+// console.log(res1);
+// console.log(res2);
+// console.log(res3);
+
+/////////// OBJETOS:
+////////// OBJETO TALVEZ SEJA A PARTE MAIS IMPORTANTE DO JAVASCRIPT, O OBJETO É  UM SEGUNDA FORMA DE GUARDAR INFORMAÇÕES DENTRO DE UM BLOCO DE DADOS, A DIFERENÇA ENTRE UM ARRAY E OBJETO É QUE: NO ARRAY, OS ITENS FICAM E ORDEM NUMERICA, JA NO OBJETO, NAO IMPORTA A ORDEM DOS DADOS, POIS ELES TEM UMA DESCRIÇÃO VINCULADA A ELES
+//EXEMPLO:::::
+const Jonas = {
+  firstName: "Jonas",
+  secondName: "Schmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["michael", "peter", "Steven"],
 };
-
-//2
-const bills = [125, 555, 44];
-
-//3
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-
-//4 somando o total em arrays
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-
-console.log(bills, tips, totals);
-
-//praticando de novo
-const calcGorjeta = function (conta) {
-  return conta >= 50 && conta <= 300 ? conta * 0.15 : conta * 0.2;
-};
-
-const contas = [275, 40, 430];
-const gorjetas = [
-  calcGorjeta(contas[0]),
-  calcGorjeta(contas[1]),
-  calcGorjeta(contas[2]),
-];
-
-const contasgorjetas = [41.25, 8, 86];
-
-const go1 = 275 + 41.25;
-const go2 = 40 + 8;
-const go3 = 430 + 86;
-const gos = [316.25, 48, 516];
-
-const res1 =
-  "A conta foi " +
-  contas[0] +
-  " a gorjeta foi " +
-  contasgorjetas[0] +
-  " e o total ficou " +
-  gos[0];
-
-const res2 =
-  "A conta foi " +
-  contas[1] +
-  " a gorjeta foi " +
-  contasgorjetas[1] +
-  " e o total ficou " +
-  gos[1];
-
-const res3 =
-  "A conta foi " +
-  contas[2] +
-  " a gorjeta foi " +
-  contasgorjetas[2] +
-  " e o total ficou " +
-  gos[2];
-
-console.log(go1, go2, go3);
-console.log(contas, gorjetas);
-console.log(res1);
-console.log(res2);
-console.log(res3);
