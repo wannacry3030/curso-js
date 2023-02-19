@@ -181,4 +181,17 @@ console.log(Jonas["second" + nameKey]);
 const interestedIn = prompt(
   "O que voce quer saber sobre Jonas? Escolha entre: firstName, secondName, age, job, friends;"
 );
-console.log(Jonas[interestedIn]);
+
+if (Jonas[interestedIn]) {
+  console.log(Jonas[interestedIn]);
+} else {
+  console.log(
+    "Pedido invalido, por favor, Escolha entre: firstName, secondName, age, job, friends;"
+  );
+}
+
+///desafio
+// "Jonas tem 3 amigos, e o melhor amigo dele se chama Michael"
+console.log(
+  `${Jonas.firstName} tem ${Jonas.friends.length} amigos, e o melhor amigo dele se chama ${Jonas.friends[0]}`
+);
