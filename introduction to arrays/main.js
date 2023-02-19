@@ -158,6 +158,7 @@
 /////////// OBJETOS:
 ////////// OBJETO TALVEZ SEJA A PARTE MAIS IMPORTANTE DO JAVASCRIPT, O OBJETO É  UM SEGUNDA FORMA DE GUARDAR INFORMAÇÕES DENTRO DE UM BLOCO DE DADOS, A DIFERENÇA ENTRE UM ARRAY E OBJETO É QUE: NO ARRAY, OS ITENS FICAM E ORDEM NUMERICA, JA NO OBJETO, NAO IMPORTA A ORDEM DOS DADOS, POIS ELES TEM UMA DESCRIÇÃO VINCULADA A ELES
 //EXEMPLO:::::
+
 const Jonas = {
   firstName: "Jonas",
   secondName: "Schmedtmann",
@@ -165,3 +166,7 @@ const Jonas = {
   job: "teacher",
   friends: ["michael", "peter", "Steven"],
 };
+console.log(Jonas);
+
+//chamando um dado do objeto, usando PONTO
+console.log(Jonas.job);
