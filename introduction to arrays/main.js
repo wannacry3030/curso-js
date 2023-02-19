@@ -170,3 +170,15 @@ console.log(Jonas);
 
 //chamando um dado do objeto, usando PONTO
 console.log(Jonas.job);
+console.log(Jonas["job"]);
+
+//utilizando bracket notation pra mostrar um objeto, o bracket notation vai buscar uma propriedade que foi definida em um objeto, exemplos abaixo:
+const nameKey = "Name";
+console.log(Jonas["first" + nameKey]);
+console.log(Jonas["second" + nameKey]);
+
+//exemplo:
+const interestedIn = prompt(
+  "O que voce quer saber sobre Jonas? Escolha entre: firstName, secondName, age, job, friends;"
+);
+console.log(Jonas[interestedIn]);
