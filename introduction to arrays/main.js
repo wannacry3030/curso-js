@@ -159,39 +159,81 @@
 ////////// OBJETO TALVEZ SEJA A PARTE MAIS IMPORTANTE DO JAVASCRIPT, O OBJETO É  UM SEGUNDA FORMA DE GUARDAR INFORMAÇÕES DENTRO DE UM BLOCO DE DADOS, A DIFERENÇA ENTRE UM ARRAY E OBJETO É QUE: NO ARRAY, OS ITENS FICAM E ORDEM NUMERICA, JA NO OBJETO, NAO IMPORTA A ORDEM DOS DADOS, POIS ELES TEM UMA DESCRIÇÃO VINCULADA A ELES
 //EXEMPLO:::::
 
+// const Jonas = {
+//   firstName: "Jonas",
+//   secondName: "Schmedtmann",
+//   age: 2037 - 1991,
+//   job: "teacher",
+//   friends: ["michael", "peter", "Steven"],
+// };
+// console.log(Jonas);
+
+// //chamando um dado do objeto, usando PONTO
+// console.log(Jonas.job);
+// console.log(Jonas["job"]);
+
+// //utilizando bracket notation pra mostrar um objeto, o bracket notation vai buscar uma propriedade que foi definida em um objeto, exemplos abaixo:
+// const nameKey = "Name";
+// console.log(Jonas["first" + nameKey]);
+// console.log(Jonas["second" + nameKey]);
+
+// //exemplo:
+// const interestedIn = prompt(
+//   "O que voce quer saber sobre Jonas? Escolha entre: firstName, secondName, age, job, friends;"
+// );
+
+// if (Jonas[interestedIn]) {
+//   console.log(Jonas[interestedIn]);
+// } else {
+//   console.log(
+//     "Pedido invalido, por favor, Escolha entre: firstName, secondName, age, job, friends;"
+//   );
+// }
+
+// ///desafio
+// // "Jonas tem 3 amigos, e o melhor amigo dele se chama Michael"
+// console.log(
+//   `${Jonas.firstName} tem ${Jonas.friends.length} amigos, e o melhor amigo dele se chama ${Jonas.friends[0]}`
+// );
+
 const Jonas = {
   firstName: "Jonas",
   secondName: "Schmedtmann",
-  age: 2037 - 1991,
+  birthYear: 1991,
   job: "teacher",
   friends: ["michael", "peter", "Steven"],
+  hasDriversLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2023 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   return 2023 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2023 - this.birthYear;
+    return this.age;
+  },
 };
-console.log(Jonas);
+console.log(Jonas.calcAge());
+console.log(Jonas.age);
+console.log(Jonas.age);
+console.log(Jonas.age);
 
-//chamando um dado do objeto, usando PONTO
-console.log(Jonas.job);
-console.log(Jonas["job"]);
+//DESAFIO
+//'Jonas é um professor de 32 anos de idade, e ele tem uma CNH'
 
-//utilizando bracket notation pra mostrar um objeto, o bracket notation vai buscar uma propriedade que foi definida em um objeto, exemplos abaixo:
-const nameKey = "Name";
-console.log(Jonas["first" + nameKey]);
-console.log(Jonas["second" + nameKey]);
+const lucas = {
+  pnome: "lucas",
+  snome: "oliveira",
+  nascimento: "1996",
+  carteiraCnh: False,
 
-//exemplo:
-const interestedIn = prompt(
-  "O que voce quer saber sobre Jonas? Escolha entre: firstName, secondName, age, job, friends;"
-);
-
-if (Jonas[interestedIn]) {
-  console.log(Jonas[interestedIn]);
-} else {
-  console.log(
-    "Pedido invalido, por favor, Escolha entre: firstName, secondName, age, job, friends;"
-  );
+  chall1: function() {
+    if (this.carteiraCnh) true {
+      console.log("ok")
+    }
+  }
 }
-
-///desafio
-// "Jonas tem 3 amigos, e o melhor amigo dele se chama Michael"
-console.log(
-  `${Jonas.firstName} tem ${Jonas.friends.length} amigos, e o melhor amigo dele se chama ${Jonas.friends[0]}`
-);
