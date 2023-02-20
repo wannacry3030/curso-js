@@ -196,31 +196,31 @@
 //   `${Jonas.firstName} tem ${Jonas.friends.length} amigos, e o melhor amigo dele se chama ${Jonas.friends[0]}`
 // );
 
-const Jonas = {
-  firstName: "Jonas",
-  secondName: "Schmedtmann",
-  birthYear: 1991,
-  job: "teacher",
-  friends: ["michael", "peter", "Steven"],
-  hasDriversLicense: true,
+// const Jonas = {
+//   firstName: "Jonas",
+//   secondName: "Schmedtmann",
+//   birthYear: 1991,
+//   job: "teacher",
+//   friends: ["michael", "peter", "Steven"],
+//   hasDriversLicense: true,
 
-  // calcAge: function (birthYear) {
-  //   return 2023 - birthYear;
-  // },
+//   // calcAge: function (birthYear) {
+//   //   return 2023 - birthYear;
+//   // },
 
-  // calcAge: function () {
-  //   return 2023 - this.birthYear;
-  // },
+//   // calcAge: function () {
+//   //   return 2023 - this.birthYear;
+//   // },
 
-  calcAge: function () {
-    this.age = 2023 - this.birthYear;
-    return this.age;
-  },
-};
-console.log(Jonas.calcAge());
-console.log(Jonas.age);
-console.log(Jonas.age);
-console.log(Jonas.age);
+//   calcAge: function () {
+//     this.age = 2023 - this.birthYear;
+//     return this.age;
+//   },
+// };
+// console.log(Jonas.calcAge());
+// console.log(Jonas.age);
+// console.log(Jonas.age);
+// console.log(Jonas.age);
 
 //DESAFIO
 //'Jonas é um professor de 32 anos de idade, e ele tem uma CNH'
@@ -228,12 +228,21 @@ console.log(Jonas.age);
 const lucas = {
   pnome: "lucas",
   snome: "oliveira",
+  trabalho: "desenvolvedor",
   nascimento: "1996",
-  carteiraCnh: False,
+  carteiraCnh: true,
 
-  chall1: function() {
-    if (this.carteiraCnh) true {
-      console.log("ok")
+  chall1: function () {
+    this.idade = 2023 - this.nascimento;
+    if (this.carteiraCnh[true]) {
+      console.log(
+        `${this.pnome} é um ${this.trabalho} de ${this.idade} anos, e ele tem uma CNH!`
+      );
+    } else {
+      console.log(
+        `${this.pnome} é um ${this.trabalho} de ${this.idade} anos, e ele não tem uma CNH! :/`
+      );
     }
-  }
-}
+  },
+};
+console.log(lucas.chall1());
