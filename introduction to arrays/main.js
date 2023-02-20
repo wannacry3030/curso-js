@@ -225,24 +225,67 @@
 //DESAFIO
 //'Jonas é um professor de 32 anos de idade, e ele tem uma CNH'
 
-const lucas = {
-  pnome: "lucas",
-  snome: "oliveira",
-  trabalho: "desenvolvedor",
-  nascimento: "1996",
-  carteiraCnh: false,
+// const lucas = {
+//   pnome: "lucas",
+//   snome: "oliveira",
+//   trabalho: "desenvolvedor",
+//   nascimento: "1996",
+//   carteiraCnh: false,
 
-  chall1: function () {
-    this.idade = 2023 - this.nascimento;
-    if (this.carteiraCnh == true) {
-      console.log(
-        `${this.pnome} é um ${this.trabalho} de ${this.idade} anos, e ele tem uma CNH!`
-      );
-    } else {
-      console.log(
-        `${this.pnome} é um ${this.trabalho} de ${this.idade} anos, e ele não tem uma CNH! :/`
-      );
-    }
+//   chall1: function () {
+//     this.idade = 2023 - this.nascimento;
+//     if (this.carteiraCnh == true) {
+//       console.log(
+//         `${this.pnome} é um ${this.trabalho} de ${this.idade} anos, e ele tem uma CNH!`
+//       );
+//     } else {
+//       console.log(
+//         `${this.pnome} é um ${this.trabalho} de ${this.idade} anos, e ele não tem uma CNH! :/`
+//       );
+//     }
+//   },
+//   // forma otimizada de escrever esse desafio:
+//   getSumario: function () {
+//     return `${this.pnome} é um ${this.trabalho} de ${this.idade} anos, e ele ${
+//       this.carteiraCnh ? "tem" : "nao tem"
+//     } uma CNH`;
+//   },
+// };
+// console.log(lucas.chall1());
+// console.log(lucas.getSumario());
+
+//DESAFIO 3
+//CODING CHALLENGE #1
+const obMark = {
+  nome: "Mark Miller",
+  peso: 78,
+  altura: 1.69,
+  calcBMI: function () {
+    this.bmi = this.peso / this.altura ** 2;
+    return this.bmi;
   },
 };
-console.log(lucas.chall1());
+
+const obJohn = {
+  nome: "John Smith",
+  peso: 92,
+  altura: 1.95,
+  calcBMI: function () {
+    this.bmi = this.peso / this.altura ** 2;
+    return this.bmi;
+  },
+};
+
+obMark.calcBMI();
+obJohn.calcBMI();
+console.log(obJohn.bmi, obMark.bmi);
+
+if (obMark.bmi > obJohn.bmi) {
+  console.log(
+    `o BMI ${obMark.bmi} de ${obMark.nome} é maior que o BMI ${obJohn.bmi} de ${obJohn.nome}`
+  );
+} else {
+  console.log(
+    `o BMI ${obJohn.johnBM} de ${obJohn.nome} é maior que o BMI ${obMark.markBMI} de ${obMark.nome}`
+  );
+}
