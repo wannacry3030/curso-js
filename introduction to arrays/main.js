@@ -230,11 +230,11 @@ const lucas = {
   snome: "oliveira",
   trabalho: "desenvolvedor",
   nascimento: "1996",
-  carteiraCnh: true,
+  carteiraCnh: false,
 
   chall1: function () {
     this.idade = 2023 - this.nascimento;
-    if (this.carteiraCnh[true]) {
+    if (this.carteiraCnh == true) {
       console.log(
         `${this.pnome} é um ${this.trabalho} de ${this.idade} anos, e ele tem uma CNH!`
       );
