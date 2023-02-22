@@ -309,6 +309,58 @@
 // }
 
 //exemplo de array loop:::
+// const lucas = [
+//   "Lucas",
+//   "oliveira",
+//   2023 - 1996,
+//   "desenvolvedor",
+//   ["pedro", "ycaro", "joao"],
+//   true,
+// ];
+// const types = [];
+
+// for (let i = 0; i < lucas.length; i++) {
+//   //lendo do array lucas:
+//   console.log(lucas[i], typeof lucas[i]);
+
+//   //array com tipos diferentes de variaveis::
+//   // types[i] = typeof lucas[i];
+
+//   //adicionando um elemento ao array: (essa forma é mais clean)
+//   types.push(typeof lucas[i]);
+// }
+
+// console.log(types);
+
+// const anos = [1951, 1980, 1996, 2020];
+// const idades = [];
+
+// for (let i = 0; i < anos.length; i++) {
+//   idades.push(2023 - anos[i]);
+// }
+// console.log(idades);
+
+// //CONTINUE AND BREAK STATEMENTS::
+// //CONTINUE: continue é usado pra passar a iteração atual do loop e continuar para a proxima,
+// //BREAK: break é usado para terminar  completamente o loop..
+// //exeplos:
+
+// console.log("===SOMENTE STRINGS===");
+// for (let i = 0; i < lucas.length; i++) {
+//   //continue statement:
+//   if (typeof lucas[i] !== "string") continue;
+
+//   console.log(lucas[i], typeof lucas[i]);
+// }
+
+// console.log("===BREAK COM NUMERO===");
+// for (let i = 0; i < lucas.length; i++) {
+//   //break statement:
+//   if (typeof lucas[i] === "number") break;
+
+//   console.log(lucas[i], typeof lucas[i]);
+// }
+
 const lucas = [
   "Lucas",
   "oliveira",
@@ -317,46 +369,19 @@ const lucas = [
   ["pedro", "ycaro", "joao"],
   true,
 ];
-const types = [];
 
-for (let i = 0; i < lucas.length; i++) {
-  //lendo do array lucas:
-  console.log(lucas[i], typeof lucas[i]);
-
-  //array com tipos diferentes de variaveis::
-  // types[i] = typeof lucas[i];
-
-  //adicionando um elemento ao array: (essa forma é mais clean)
-  types.push(typeof lucas[i]);
+//fazendo um loop do final pro começo (backwards)
+for (let i = lucas.length - 1; i >= 0; i--) {
+  console.log(i, lucas[i]);
 }
 
-console.log(types);
+//CRIANDO UM LOOP DENTRO DE UM LOOP
+for (let exercicios = 1; exercicios < 4; exercicios++) {
+  console.log(`------começando exercicio ${exercicios}`);
 
-const anos = [1951, 1980, 1996, 2020];
-const idades = [];
-
-for (let i = 0; i < anos.length; i++) {
-  idades.push(2023 - anos[i]);
-}
-console.log(idades);
-
-//CONTINUE AND BREAK STATEMENTS::
-//CONTINUE: continue é usado pra passar a iteração atual do loop e continuar para a proxima,
-//BREAK: break é usado para terminar  completamente o loop..
-//exeplos:
-
-console.log("===SOMENTE STRINGS===");
-for (let i = 0; i < lucas.length; i++) {
-  //continue statement:
-  if (typeof lucas[i] !== "string") continue;
-
-  console.log(lucas[i], typeof lucas[i]);
-}
-
-console.log("===BREAK COM NUMERO===");
-for (let i = 0; i < lucas.length; i++) {
-  //break statement:
-  if (typeof lucas[i] === "number") break;
-
-  console.log(lucas[i], typeof lucas[i]);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(
+      `exercicio ${exercicios}: repetição de levantamento de peso N: ${rep}`
+    );
+  }
 }
