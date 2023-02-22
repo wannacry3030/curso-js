@@ -256,36 +256,54 @@
 
 //DESAFIO 3
 //CODING CHALLENGE #1
-const obMark = {
-  nome: "Mark Miller",
-  peso: 78,
-  altura: 1.69,
-  calcBMI: function () {
-    this.bmi = this.peso / this.altura ** 2;
-    return this.bmi;
-  },
-};
+// const obMark = {
+//   nome: "Mark Miller",
+//   peso: 78,
+//   altura: 1.69,
+//   calcBMI: function () {
+//     this.bmi = this.peso / this.altura ** 2;
+//     return this.bmi;
+//   },
+// };
 
-const obJohn = {
-  nome: "John Smith",
-  peso: 92,
-  altura: 1.95,
-  calcBMI: function () {
-    this.bmi = this.peso / this.altura ** 2;
-    return this.bmi;
-  },
-};
+// const obJohn = {
+//   nome: "John Smith",
+//   peso: 92,
+//   altura: 1.95,
+//   calcBMI: function () {
+//     this.bmi = this.peso / this.altura ** 2;
+//     return this.bmi;
+//   },
+// };
 
-obMark.calcBMI();
-obJohn.calcBMI();
-console.log(obJohn.bmi, obMark.bmi);
+// obMark.calcBMI();
+// obJohn.calcBMI();
+// console.log(obJohn.bmi, obMark.bmi);
 
-if (obMark.bmi > obJohn.bmi) {
-  console.log(
-    `o BMI ${obMark.bmi} de ${obMark.nome} é maior que o BMI ${obJohn.bmi} de ${obJohn.nome}`
-  );
-} else {
-  console.log(
-    `o BMI ${obJohn.johnBM} de ${obJohn.nome} é maior que o BMI ${obMark.markBMI} de ${obMark.nome}`
-  );
+// if (obMark.bmi > obJohn.bmi) {
+//   console.log(
+//     `o BMI ${obMark.bmi} de ${obMark.nome} é maior que o BMI ${obJohn.bmi} de ${obJohn.nome}`
+//   );
+// } else {
+//   console.log(
+//     `o BMI ${obJohn.johnBM} de ${obJohn.nome} é maior que o BMI ${obMark.markBMI} de ${obMark.nome}`
+//   );
+// }
+
+//FOR LOOPS:::
+
+// console.log('Levantando peso repetição 1')
+// console.log('Levantando peso repetição 2')
+// console.log('Levantando peso repetição 3')
+// console.log('Levantando peso repetição 4')
+// console.log('Levantando peso repetição 5')
+// console.log('Levantando peso repetição 6')
+// console.log('Levantando peso repetição 7')
+// console.log('Levantando peso repetição 8')
+// console.log('Levantando peso repetição 9')
+// console.log('Levantando peso repetição 10')
+
+//um loop continua rodando enquanto a condição for verdadeira:
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Levantando peso repetição ${rep}`);
 }
