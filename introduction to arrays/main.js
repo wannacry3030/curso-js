@@ -317,7 +317,46 @@ const lucas = [
   ["pedro", "ycaro", "joao"],
   true,
 ];
+const types = [];
 
 for (let i = 0; i < lucas.length; i++) {
+  //lendo do array lucas:
+  console.log(lucas[i], typeof lucas[i]);
+
+  //array com tipos diferentes de variaveis::
+  // types[i] = typeof lucas[i];
+
+  //adicionando um elemento ao array: (essa forma é mais clean)
+  types.push(typeof lucas[i]);
+}
+
+console.log(types);
+
+const anos = [1951, 1980, 1996, 2020];
+const idades = [];
+
+for (let i = 0; i < anos.length; i++) {
+  idades.push(2023 - anos[i]);
+}
+console.log(idades);
+
+//CONTINUE AND BREAK STATEMENTS::
+//CONTINUE: continue é usado pra passar a iteração atual do loop e continuar para a proxima,
+//BREAK: break é usado para terminar  completamente o loop..
+//exeplos:
+
+console.log("===SOMENTE STRINGS===");
+for (let i = 0; i < lucas.length; i++) {
+  //continue statement:
+  if (typeof lucas[i] !== "string") continue;
+
+  console.log(lucas[i], typeof lucas[i]);
+}
+
+console.log("===BREAK COM NUMERO===");
+for (let i = 0; i < lucas.length; i++) {
+  //break statement:
+  if (typeof lucas[i] === "number") break;
+
   console.log(lucas[i], typeof lucas[i]);
 }
