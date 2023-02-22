@@ -304,6 +304,20 @@
 // console.log('Levantando peso repetição 10')
 
 //um loop continua rodando enquanto a condição for verdadeira:
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Levantando peso repetição ${rep}`);
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Levantando peso repetição ${rep}`);
+// }
+
+//exemplo de array loop:::
+const lucas = [
+  "Lucas",
+  "oliveira",
+  2023 - 1996,
+  "desenvolvedor",
+  ["pedro", "ycaro", "joao"],
+  true,
+];
+
+for (let i = 0; i < lucas.length; i++) {
+  console.log(lucas[i], typeof lucas[i]);
 }
