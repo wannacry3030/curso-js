@@ -435,11 +435,23 @@ const gorjeta = [];
 const total = [];
 
 //reutilizando a função calctip
-const calcTip = function (contas) {
-  return contas >= 50 && contas <= 300 ? contas * 0.15 : contas * 0.2;
+const calcGorjeta = function (conta) {
+  return conta >= 50 && conta <= 300 ? conta * 0.15 : conta * 0.2;
 };
 console.log(contas);
 
-for (let conta1 = 1; conta1 < 11; conta1++) {
-  console.log(`calculando as contas ${contas}`);
+for (let i = 0; i < contas.length; i++) {
+  gorjeta.push(calcGorjeta(contas[i]));
+  console.log(gorjeta);
 }
+console.log(contas[i]);
+
+// console.log(types);
+
+// const anos = [1951, 1980, 1996, 2020];
+// const idades = [];
+
+// for (let i = 0; i < anos.length; i++) {
+//   idades.push(2023 - anos[i]);
+// }
+// console.log(idades);
