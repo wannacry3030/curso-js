@@ -438,21 +438,18 @@ const total = [];
 const calcGorjeta = function (conta) {
   return conta >= 50 && conta <= 300 ? conta * 0.15 : conta * 0.2;
 };
-console.log(contas);
-
-for (let i = 0; i < contas.length; i++) {
-  gorjeta.push(calcGorjeta(contas[i]));
-  total.push(gorjeta[i] + contas[i]);
-  console.log(contas, gorjeta, total);
-}
-console.log(contas[i]);
-
-// console.log(types);
-
-// const anos = [1951, 1980, 1996, 2020];
-// const idades = [];
-
-// for (let i = 0; i < anos.length; i++) {
-//   idades.push(2023 - anos[i]);
+//MINHA SOLUÇÃO
+// for (let i = 0; i < contas.length; i++) {
+//   gorjeta.push(calcGorjeta(contas[i]));
+//   total.push(gorjeta[i] + contas[i]);
+//   console.log(contas, gorjeta, total);
 // }
-// console.log(idades);
+// console.log(contas[i]);
+
+//SOLUÇÃO DO PROFESSOR
+for (let i = 0; i < contas.length; i++) {
+  const tip = calcGorjeta(contas[i]);
+  gorjeta.push(tip);
+  total.push(tip + contas[i]);
+}
+console.log(contas, gorjeta, total);
