@@ -385,3 +385,10 @@ for (let exercicios = 1; exercicios < 4; exercicios++) {
     );
   }
 }
+
+//explorando o WHILE LOOP:
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Levantando pesos -repetições- ${rep}`);
+  rep++;
+}
