@@ -442,7 +442,8 @@ console.log(contas);
 
 for (let i = 0; i < contas.length; i++) {
   gorjeta.push(calcGorjeta(contas[i]));
-  console.log(gorjeta);
+  total.push(gorjeta[i] + contas[i]);
+  console.log(contas, gorjeta, total);
 }
 console.log(contas[i]);
 
