@@ -389,6 +389,13 @@ for (let exercicios = 1; exercicios < 4; exercicios++) {
 //explorando o WHILE LOOP:
 let rep = 1;
 while (rep <= 10) {
-  console.log(`Levantando pesos -repetições- ${rep}`);
+  console.log(`WHILE: Levantando pesos -repetições- ${rep}`);
   rep++;
+}
+
+let dado = Math.trunc(Math.random() * 6) + 1;
+console.log(dado);
+
+while (dado !== 6) {
+  console.log(`Voce rodou um ${dado}`);
 }
