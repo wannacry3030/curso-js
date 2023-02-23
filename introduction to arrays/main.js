@@ -361,41 +361,51 @@
 //   console.log(lucas[i], typeof lucas[i]);
 // }
 
-const lucas = [
-  "Lucas",
-  "oliveira",
-  2023 - 1996,
-  "desenvolvedor",
-  ["pedro", "ycaro", "joao"],
-  true,
-];
+// const lucas = [
+//   "Lucas",
+//   "oliveira",
+//   2023 - 1996,
+//   "desenvolvedor",
+//   ["pedro", "ycaro", "joao"],
+//   true,
+// ];
 
-//fazendo um loop do final pro começo (backwards)
-for (let i = lucas.length - 1; i >= 0; i--) {
-  console.log(i, lucas[i]);
-}
+// //fazendo um loop do final pro começo (backwards)
+// for (let i = lucas.length - 1; i >= 0; i--) {
+//   console.log(i, lucas[i]);
+// }
 
-//CRIANDO UM LOOP DENTRO DE UM LOOP
-for (let exercicios = 1; exercicios < 4; exercicios++) {
-  console.log(`------começando exercicio ${exercicios}`);
+// //CRIANDO UM LOOP DENTRO DE UM LOOP
+// for (let exercicios = 1; exercicios < 4; exercicios++) {
+//   console.log(`------começando exercicio ${exercicios}`);
 
-  for (let rep = 1; rep < 6; rep++) {
-    console.log(
-      `exercicio ${exercicios}: repetição de levantamento de peso N: ${rep}`
-    );
-  }
-}
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(
+//       `exercicio ${exercicios}: repetição de levantamento de peso N: ${rep}`
+//     );
+//   }
+// }
 
 //explorando o WHILE LOOP:
-let rep = 1;
-while (rep <= 10) {
-  console.log(`WHILE: Levantando pesos -repetições- ${rep}`);
-  rep++;
-}
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`WHILE: Levantando pesos -repetições- ${rep}`);
+//   rep++;
+// }
 
 let dado = Math.trunc(Math.random() * 6) + 1;
-console.log(dado);
+// console.log(dado);
 
 while (dado !== 6) {
   console.log(`Voce rodou um ${dado}`);
+  dado = Math.trunc(Math.random() * 6) + 1;
+  if (dado === 6) console.log("o Loop vai parar agora...");
 }
+
+//FINAL CHALLENGE fundamentals:
+//primeiro criar uma array chamado BILL que ira conter as 10 BILLS de teste
+//2: criar arrays vazios para o TIPS e TOTALS ('tips' e 'totals')
+//3: use a 'calcTip' function que escrevemos anteriormente (nao precisa repetir) para calcular os TIPS e TOTALS (BILL + TIP) para cada valor BILL no array BILLS. use um FOR loop para fazer os 10 calculos!
+//TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+
+//DICA: chame o calcTip dentro do loop e use o metodo PUSH pra adicionar um valor ao array TIPS e TOTALS :D
