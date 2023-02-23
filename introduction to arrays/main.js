@@ -110,7 +110,7 @@
 // const calcGorjeta = function (conta) {
 //   return conta >= 50 && conta <= 300 ? conta * 0.15 : conta * 0.2;
 // };
-
+console.log();
 // const contas = [275, 40, 430];
 // const gorjetas = [
 //   calcGorjeta(contas[0]),
@@ -393,14 +393,14 @@
 //   rep++;
 // }
 
-let dado = Math.trunc(Math.random() * 6) + 1;
-// console.log(dado);
+// let dado = Math.trunc(Math.random() * 6) + 1;
+// // console.log(dado);
 
-while (dado !== 6) {
-  console.log(`Voce rodou um ${dado}`);
-  dado = Math.trunc(Math.random() * 6) + 1;
-  if (dado === 6) console.log("o Loop vai parar agora...");
-}
+// while (dado !== 6) {
+//   console.log(`Voce rodou um ${dado}`);
+//   dado = Math.trunc(Math.random() * 6) + 1;
+//   if (dado === 6) console.log("o Loop vai parar agora...");
+// }
 
 //FINAL CHALLENGE fundamentals:
 //primeiro criar uma array chamado BILL que ira conter as 10 BILLS de teste
@@ -409,3 +409,37 @@ while (dado !== 6) {
 //TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
 
 //DICA: chame o calcTip dentro do loop e use o metodo PUSH pra adicionar um valor ao array TIPS e TOTALS :D
+
+//15% do valor da conta se  a conta for entre 50 e 300, se o valor for diferente, 20%
+//1
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
+
+//2
+// const bills = [125, 555, 44];
+
+// //3
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// //4 somando o total em arrays
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(bills, tips, totals);
+
+//criando o array com as 10 contas
+const contas = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+//criando arrays vazios para TIPS e TOTALS
+const gorjeta = [];
+const total = [];
+
+//reutilizando a função calctip
+const calcTip = function (contas) {
+  return contas >= 50 && contas <= 300 ? contas * 0.15 : contas * 0.2;
+};
+console.log(contas);
+
+for (let conta1 = 1; conta1 < 11; conta1++) {
+  console.log(`calculando as contas ${contas}`);
+}
