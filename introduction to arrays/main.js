@@ -453,3 +453,21 @@ console.log();
 //   total.push(tip + contas[i]);
 // }
 // console.log(contas, gorjeta, total);
+
+const measureKelvin = function () {
+  const measurement = {
+    type: "temp",
+    unit: "celsius",
+    // C : consertando o bug
+    value: Number(prompt("Degrees celsius:")),
+  };
+
+  // B : achando o bug
+  console.log(measurement.value);
+  console.table(measurement);
+
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+// A : identificando o bug
+console.log(measureKelvin());
