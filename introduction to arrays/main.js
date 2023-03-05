@@ -492,3 +492,14 @@ const calcTempAmplitudebug = function (t1, t2) {
 };
 const amplitudebug = calcTempAmplitudebug([3, 5, 1], [9, 0, 5]);
 console.log(amplitudebug);
+
+// DESAFIO 1:
+/* dado um array de temperaturas climaticas Maximas, o thermometro mostra uma string com as temperaturas, exemplo: [17,21,23] vai printar "... 17°C em 1 dia... 21°C em 2 dias ... 23°C em 3 dias ..."
+
+crie uma função 'printForecast' que acessa um array 'arr' e loga a string igual o exemplo para o console.
+
+use o framework de solução de problemas: entenda o problema e depois quebre ele em sub-problemas!
+
+Test data1 : [17, 21, 23]
+Test data2 : [12, 5, -5, 0, 4]
+*/
