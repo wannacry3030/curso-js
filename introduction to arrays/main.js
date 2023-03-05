@@ -428,28 +428,28 @@ console.log();
 // console.log(bills, tips, totals);
 
 //criando o array com as 10 contas
-const contas = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const contas = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 
-//criando arrays vazios para TIPS e TOTALS
-const gorjeta = [];
-const total = [];
+// //criando arrays vazios para TIPS e TOTALS
+// const gorjeta = [];
+// const total = [];
 
-//reutilizando a função calctip
-const calcGorjeta = function (conta) {
-  return conta >= 50 && conta <= 300 ? conta * 0.15 : conta * 0.2;
-};
-//MINHA SOLUÇÃO
+// //reutilizando a função calctip
+// const calcGorjeta = function (conta) {
+//   return conta >= 50 && conta <= 300 ? conta * 0.15 : conta * 0.2;
+// };
+// //MINHA SOLUÇÃO
+// // for (let i = 0; i < contas.length; i++) {
+// //   gorjeta.push(calcGorjeta(contas[i]));
+// //   total.push(gorjeta[i] + contas[i]);
+// //   console.log(contas, gorjeta, total);
+// // }
+// // console.log(contas[i]);
+
+// //SOLUÇÃO DO PROFESSOR
 // for (let i = 0; i < contas.length; i++) {
-//   gorjeta.push(calcGorjeta(contas[i]));
-//   total.push(gorjeta[i] + contas[i]);
-//   console.log(contas, gorjeta, total);
+//   const tip = calcGorjeta(contas[i]);
+//   gorjeta.push(tip);
+//   total.push(tip + contas[i]);
 // }
-// console.log(contas[i]);
-
-//SOLUÇÃO DO PROFESSOR
-for (let i = 0; i < contas.length; i++) {
-  const tip = calcGorjeta(contas[i]);
-  gorjeta.push(tip);
-  total.push(tip + contas[i]);
-}
-console.log(contas, gorjeta, total);
+// console.log(contas, gorjeta, total);
