@@ -510,11 +510,9 @@ Test data2 : [12, 5, -5, 0, 4]
 function printForecast(arr) {
   let forecastString = "";
   for (let i = 0; i < arr.length; i++) {
-    forecastString += `... ${arr[i]}°C em ${i + 1} dia`;
+    forecastString += `... ${arr[i]}°C em ${i + 1} dias`;
     if (i === arr.length - 1) {
-      forecastString += " ...";
-    } else {
-      forecastString += "... ";
+      forecastString += " ... ";
     }
   }
   console.log(forecastString);
