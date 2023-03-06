@@ -504,8 +504,8 @@ Test data1 : [17, 21, 23]
 Test data2 : [12, 5, -5, 0, 4]
 */
 
-// primeiro nos entendemoso problema:
-// agora vamos quebrar em subproblemas, precisamoss iterar sobre o array de entrada; para cada temperatura, vamos adicionar a string o valor em graus celsius e o dia correspondete.
+// primeiro nos entendemos o problema:
+// agora vamos quebrar em subproblemas, precisamoss iterar sobre o array de entrada; para cada temperatura, vamos adicionar a string o valor em graus celsius e o dia correspondente.
 
 function printForecast(arr) {
   let forecastString = "";
@@ -523,3 +523,4 @@ function printForecast(arr) {
 printForecast([17, 21, 23]); //
 
 // Test data2 : [12, 5, -5, 0, 4]
+printForecast([12, 5, -5, 0, 4]); //
